@@ -3,98 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>formAssignment</title>
+    <title>Internal CSS</title>
+    <style>
+        h1
+        {
+            background-color: red;
+            font-size: 30px;
+        }
+        p
+        {
+            background-color: green;
+            font-size: 20px;
+            color: white;
+        }
+        table
+        {
+            background-color: grey;
+        }
+        th
+        {
+            background-color: orange;
+        }
+    </style>
 </head>
 <body>
-    <form>
-        <table align="center" frame="box" width="35%" height="600px">
-            <tr>
-                <th colspan="2">
-                    <img src="images/tigerImage.jpg" height="100px" width="100px">
-                </th>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <font size="5px"><b>Registration Form</b></font>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <hr>
-                </td>
-            </tr>
-            <tr>
-                <td width="30%" valign="center" align="right">
-                    <b>Roll no.</b>
-                </td>
-                <td width="70%" align="center">
-                    <input type="text" name="rollNo">
-                </td>
-            </tr>
-            <tr>
-                <td width="30%" valign="center" align="right">
-                    <b>Name</b>
-                </td>
-                <td width="70%" align="center">
-                    <input type="text" name="fullName">
-                </td>
-            </tr>
-            <tr>
-                <td width="30%" valign="center" align="right">
-                    <b>Password</b>
-                </td>
-                <td width="70%" align="center">
-                    <input type="password" name="password">
-                </td>
-            </tr>
-            <tr>
-                <td width="30%" valign="center" align="right">
-                    <b>Address</b>
-                </td>
-                <td width="70%" align="center">
-                    <textarea rows="5" cols="25" name="address"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td width="30%" valign="center" align="right">
-                    <b>Gender</b>
-                </td>
-                <td width="70%" align="center">
-                    <input type="radio" name="gender">Male &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="radio" name="gender">Female &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="radio" name="gender">Other
-                </td>
-            </tr>
-            <tr>
-                <td width="30%" valign="center" align="right">
-                    <b>Course</b>
-                </td>
-                <td width="70%" align="center">
-                    <input type="checkbox" name="course">C &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="checkbox" name="course">C++ &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="checkbox" name="course">Java
-                </td>
-            </tr>
-            <tr>
-                <td width="30%" valign="center" align="right">
-                    <b>Select State</b>
-                </td>
-                <td width="70%" align="center">
-                    <select>
-                        <option>--select</option>
-                        <option>Maharashtra</option>
-                        <option>Goa</option>
-                        <option>Gujrat</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" align="center">
-                    <input type="submit" value="Submit" name="submit"> &nbsp;&nbsp;&nbsp;&nbsp;
-                    <input type="reset" value="Clear" name="clear">
-                </td>
-            </tr>
-        </table>
-    </form>
+    <h1>Welcome into Internal CSS</h1>
+    <p>In internal css we can write css on the same page where we want to apply it.</p>
+    <table border="2" width="80%">
+        <tr>
+            <td colspan="3" align="center">Student Info.</td>
+        </tr>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>addr.</th>
+        </tr>
+        <tr align="center">
+            <td rowspan="2">101</td>
+            <td>abc</td>
+            <td>mumbai</td>
+        </tr>
+        <tr>
+            <td>xyz</td>
+            <td>goa</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>efg</td>
+            <td>pune</td>
+        </tr>
+        <tr>
+            <td>104</td>
+            <td>lmn</td>
+            <td>jaipur</td>
+        </tr>
+    </table>
 </body>
 </html>
