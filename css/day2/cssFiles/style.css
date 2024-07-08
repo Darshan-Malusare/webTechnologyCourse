@@ -1,0 +1,19 @@
+h1
+{
+    background-color: violet;
+    font-size: 30px;
+}
+p
+{
+    background-color: tomato;
+    font-size: 20px;
+    color: white;
+}
+table
+{
+    background-color: yellowgreen;
+}
+th
+{
+    background-color: gold;
+}
