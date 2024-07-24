@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ifCondition</title>
+    <title>relationalOperators</title>
     <script>
         a = parseInt(prompt("enter integer value for a:"));
         document.write("a = "+a);
         b = parseInt(prompt("enter integer value for b:"));
         document.write("<br>b = "+b);
-        if (a > b) {
-            document.write("<br> a is greater than b");    
-        }
+        document.write("<br> a > b is "+(a > b));
+        document.write("<br> a >= b is "+(a >= b));
+        document.write("<br> a < b is "+(a < b));
+        document.write("<br> a <= b is "+(a <= b));
+        document.write("<br> a == b is "+(a == b));
     </script>
 </head>
 <body>
