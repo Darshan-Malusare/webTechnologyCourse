@@ -3,24 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nestedIfCondition</title>
+    <title>ifElseCondition</title>
     <script>
         a = parseInt(prompt("enter integer value for a:"));
         document.write("a = "+a);
         b = parseInt(prompt("enter integer value for b:"));
         document.write("<br>b = "+b);
-        c = parseInt(prompt("enter integer value for c:"));
-        document.write("<br>c = "+c);
         if (a > b) {
-            if (a > c) {
-                document.write("<br> a is greatest");
-            } else {
-                document.write("<br> c is greatest");
-            }
-        } else if (b > c){
-            document.write("<br> b is greatest");
+            document.write("<br> a is greater than b");
         } else {
-            document.write("<br> c is greatest");
+            document.write("<br> b is greater than a");
         }
     </script>
 </head>
